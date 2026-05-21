@@ -1,5 +1,26 @@
-Clase 01 - Ejercicio práctico
+Tienda Online de Camping y Trekking
 
-Descripción:
+Proyecto realizado para el curso de Front End JavaScript.
+Consiste en una landing page responsive para una tienda online de artículos de camping y trekking, desarrollada utilizando HTML5 y CSS3.
 
-Este proyecto es una página web básica desarrollada como parte de un curso de Front-End. La página está estructurada con HTML semántico y utiliza las etiquetas <header>, <main>, y <footer> para organizar el contenido. El objetivo es aprender a crear la estructura básica de una página web y prepararla para futuras mejoras con CSS y JavaScript.
+CARACTERISTICAS PRINCIPALES:
+Estructura semántica con etiquetas HTML5.
+Diseño responsive adaptable a distintos dispositivos.
+Uso de Flexbox y CSS Grid.
+Cards de productos y reseñas.
+Tabla de promociones.
+Header con navegación y buscador.
+Footer con enlaces a redes sociales.
+Estilos modernos con efectos hover y tipografías externas.
+
+TECNOLOGÍAS UTILIZADAS:
+HTML5
+CSS3
+Flexbox
+CSS Grid
+Google Fonts
+Font Awesome
+Chat GPT (para consultas ocasionales y sugerencias de mejoras)
+
+AUTOR:
+Bruno Marchetti
