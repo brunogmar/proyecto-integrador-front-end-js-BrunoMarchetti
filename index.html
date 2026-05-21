@@ -15,17 +15,18 @@
         <div class="logo">
             <img src="./assets/logo.jpg" alt="Logo de la tienda">
         </div>
-        <div class="navbar">
+        <nav class="navbar">
             <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Productos/Servicios</a></li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
-        </div>
+        </nav>
         <div>
             <form class="search-bar">
-            <input type="text" placeholder="Buscar..." />
+            <label for="buscar" class="sr-only">Buscar productos</label>
+            <input id="buscar" type="text" placeholder="Buscar..." />
             <button type="submit">🔍</button>
             </form>
         </div>
@@ -41,12 +42,12 @@
         <section class="productos">
             <article class="producto">
                 <div>
-                    <img src="./assets/carpa.jpg" alt="Imagen de producto">
+                    <img src="./assets/carpa.jpg" alt="Carpa Doite Pro Aconcagua 3">
                     <h3>Carpa Doite Pro Aconcagua 3</h3>
                     <p>Capacidad para 3 personas. Ultra liviana y de fácil armado. Con bolsa de transporte compacta.</p>
                 </div>
                 <div class="precio-btn">
-                    <h2>$359.000</h2>
+                    <p class="precio">$359.000</p>
                     <button class="btn-carrito">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
@@ -54,12 +55,12 @@
             </article>
             <article class="producto">
                 <div>
-                    <img src="./assets/mochila.jpg" alt="Imagen de producto">
+                    <img src="./assets/mochila.jpg" alt="Mochila Trekking Naturehike 55+5L">
                     <h3>Mochila Trekking Naturehike 55+5L</h3>
                     <p>Mochila ideal para trekking, gracias a su gran capacidad y cómodo espaldar.</p>
                 </div>
                 <div class="precio-btn">
-                    <h2>$284.476</h2>
+                    <p class="precio">$284.476</p>
                     <button class="btn-carrito">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
@@ -67,12 +68,12 @@
             </article>
             <article class="producto">
                 <div>
-                    <img src="./assets/bolsa-de-dormir.jpg" alt="Imagen de producto">
+                    <img src="./assets/bolsa-de-dormir.jpg" alt="Bolsa de dormir Northland -8ºC">
                     <h3>Bolsa de dormir Northland -8ºC</h3>
                     <p>Peso: 1.4 Kg. Temperatura extrema: -8°C. Temperatura de confort: +15°C</p>
                 </div>
                 <div class="precio-btn">
-                    <h2>$284.476</h2>
+                    <p class="precio">$284.476</p>
                     <button class="btn-carrito">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </button>
@@ -80,14 +81,17 @@
             </article>
         </section>
 
-        <div class="tabla-promociones">
+        <section class="tabla-promociones">
           <table border="1">
             <caption>Promociones y descuentos:</caption>
+            <thead>
             <tr>
                 <th>Medio de pago</th>
                 <th>Cuotas sin interés</th>
                 <th>Contado</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Banco Nación</td>
                 <td>6</td>
@@ -102,38 +106,41 @@
                 <td>No aplica</td>
                 <td>10% de descuento</td>
             </tr>
+            </tbody>
           </table>
-        </div>
+        </section>
 
         <section class="reseñas">
-            <section class="card">
+            <article class="card">
                 <img src="./assets/Mariana.jpeg" alt="Mariana" class="foto-perfil">
                 <div class="nombre-mje">
                     <h3>Mariana</h3>
                     <p>"Muy buena la tienda, encontré todo lo que necesitaba".</p>
                 </div>
-            </section>
-            <section class="card">
+            </article>
+            <article class="card">
                 <img src="./assets/Sergio.jpeg" alt="Sergio" class="foto-perfil">
                 <div class="nombre-mje">
                     <h3>Sergio</h3>
                     <p>"Compré y en dos días me llegó el pedido con la promoción de envío gratis a todo el país".</p>
                 </div>
-            </section>
-            <section class="card">
+            </article>
+            <article class="card">
                 <img src="./assets/Juana.jpeg" alt="Juana" class="foto-perfil">
                 <div class="nombre-mje">
                     <h3>Juana</h3>
                     <p>"Mi producto vino fallado y lo pude cambiar sin inconvenientes. Recomendado!".</p>
                 </div>
-            </section>
+            </article>
         </section>
     </main>
 
     <footer>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <nav class="redes-sociales">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </nav>
         <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
 </body>

@@ -6,7 +6,6 @@
     font-family: 'Raleway', sans-serif;
 }
 .header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between; /* logo izquierda, menú derecha */
@@ -16,13 +15,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 180px;
+    min-height: 180px;
+    padding: 2rem;
     padding: 5%;
 }
 .titulo {
     color: darkblue;
-    padding: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 24px;
     font-size: 2vw;
 }
 h2 {
@@ -37,7 +36,8 @@ h2 {
     border-radius: 15%;
 }
 body {
-    background-color: #ffffff;
+    background-color: #f7f5f2;
+    font-family: 'Raleway', sans-serif;
 }
 .navbar {
     flex: 1;
@@ -54,10 +54,10 @@ body {
     display: inline;        
 }
 li a {
-    font-size: 3vw;
+    font-size: clamp(1.7rem, 1.5vw, 1.4rem);
     list-style: none;
     text-decoration: none;
-    padding-bottom: 10px; 
+    padding-bottom: 8px; 
     color: rgb(1, 1, 83);
 }
 .productos {
@@ -69,15 +69,15 @@ li a {
 .precio-btn {
     display: flex;
     flex-flow: row;
-    padding: 5px;
+    padding: 8px;
 }
 .producto {
     display: flex;
     width: clamp(320px, 25vw, 320px);
     border: 2px solid gray;
     border-radius: 20px;
-    padding: 10px;
-    background-color: #ffffff;
+    padding: 8px;
+    background-color: bisque;
     justify-content: space-between;
     flex-flow: column;
 }
@@ -86,27 +86,33 @@ li a {
     height: auto;
     border: 2px solid gray;
     border-radius: 20px;
+    max-width: 100%;
+}
+.precio {
+    font-size: xx-large;
 }
 
 .btn-carrito {
-  width: 100%;
-  justify-content: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .reseñas {
     display: grid;
-    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    padding: 1% 10% 2% 10%;
+    padding:  8px 32px 8px 32px;
+    margin-bottom: 32px;
 }
 .card {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 8px;
+    border: 1px solid #8f8f8f;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background-color: bisque;
 }
 .card:hover {
     transform: translateY(-5px);
@@ -115,9 +121,10 @@ li a {
 }
 .foto-perfil {
     width: 100px;
-    height: 100px;
     border-radius: 50%;
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 .nombre-mje {
     display: flex;
@@ -125,30 +132,43 @@ li a {
     justify-content: space-around;
 }
 h3 {
-      margin: 0;
+    margin: 0;
 }
 p {
-  margin: 0;
-  line-height: 1.5;
+    margin: 0;
+    line-height: 1.5;
 }
 footer {
-    padding: 25px;
+    padding: 24px;
     background-color: rgb(14, 0, 63);
 }
 footer p {
     color: #faf7db;
-    padding: 10px;
+    padding: 8px;
 }
 i {
-padding: 5px;
-font-size: 24px;
-color: rgb(255, 136, 0);
+    padding: 8px;
+    font-size: 24px;
+    color: rgb(255, 136, 0);
 }
 
 .tabla-promociones {
     display: flex;
     justify-content: center;
     color: rgb(1, 1, 83);
-    padding: 30px;
+    padding: 32px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: auto;
+}
+table {
+        background-color: bisque;
+}
+input, textarea {
+    width: 100%;
+}
+#contacto {
+    margin: 32px;
+}
+label {
+    margin-bottom: 16px;
 }
